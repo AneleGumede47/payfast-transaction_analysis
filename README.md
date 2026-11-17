@@ -23,34 +23,36 @@ This project answers seven practical data analyst questions covering transaction
 ## Visual Highlights
 
 ### Card Type Distribution (15 Jun – 15 Jul 2024)
-[payfast-transaction-analysis/images/q1_card_types.png]
 <img width="2371" height="1168" alt="q1_card_types" src="https://github.com/user-attachments/assets/949139f0-0362-482b-8c9f-82c4c2360166" />
 
 
 ### Transaction Value by Bank (All vs. Successful)
-[payfast-transaction-analysis/images/q2_bank_amounts.png]
+<img width="2667" height="1320" alt="q2_bank_amounts" src="https://github.com/user-attachments/assets/1c8c6522-25be-4c28-b3b2-d5e8111d22c9" />
+
 
 ### Daily Volume Forecast (16–31 August 2024)
-[payfast-transaction-analysis/images/q5_daily_forecast.png]
+<img width="3251" height="1320" alt="q5_daily_forecast" src="https://github.com/user-attachments/assets/e09047f1-c526-40d3-8cff-e2f83e7d994b" />
+
 
 ### Hourly Traffic Pattern
-[payfast-transaction-analysis/images/q7_hourly_volume.png]
+<img width="2667" height="1168" alt="q7_hourly_volume" src="https://github.com/user-attachments/assets/4b6ab1d3-ea4b-4dea-a9a5-1838ecf4ca68" />
+
 
 ## Recommended Client Dashboard (Q6)
-A 2-page **Executive & Operations Dashboard** featuring:
+A **Executive & Operations Dashboard** featuring:
 1. **KPI Summary Cards:** Unique transactions, successful transactions, settled ZAR value, approval rate, decline rate, and refund rate.
 2. **Volume & Forecast Trend:** Daily total vs. successful volume with a 7-day moving average and rest-of-month forecast.
 3. **Conversion Funnel & Failure Diagnostics:** Stage drop-off (`Authorise` → `Approved` → `Settlement` → `Paid`) segmented by `RESULT_CODE`, `BANK`, and `CARD_TYPE`.
 4. **Settlement & Data Quality Monitor:** Batch settlement lag tracking and alerts for unclosed stages (`DATE_END` nulls) or duplicate settlements.
 
 ## Business Insights & Recommendations (Q7)
-- **Peak Traffic Windows:** Weekday volume (208–251/day) is over 2x weekend volume (94–113/day), peaking on Mondays and between 09:00–12:00. Maintenance windows should run between 00:00–05:00.
+- **Peak Traffic Windows:** Weekday volume (208–251/day) is over 2x weekend volume (94–113/day), peaking on Mondays and between 09:00–12:00, maintenance windows should run between 00:00–05:00.
 - **Card Scheme Conversion:** American Express converts at **98.62%**, whereas MasterCard has the highest decline rate (**14.39%**) and Diners Club has the highest refund rate (**8.74%**).
 - **Data Governance:** Enforce bank-name validation at ingestion and audit the **392** `Not Done` authorisations and **23** duplicate settlement records.
 
 ## Repository Structure
-- `payfast_analysis.ipynb` — Full step-by-step Python & SQLite analysis notebook
-- `payfast-transaction-analysis/images/` — Exported matplotlib charts
+- `payfast_analysis.ipynb`- Full step-by-step Python & SQLite analysis notebook
+- `payfast-transaction-analysis/images/`- Exported matplotlib charts
 - `payfast-transaction-analysis/sql/queries.sql` — Verified SQL queries for Q1–Q4
 - `requirements.txt` — Python dependencies
 - `README.md` — Project overview and findings
