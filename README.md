@@ -5,7 +5,7 @@ End-to-end analysis of **26,783** payment stage records (**14,040** unique trans
 ## Project Overview
 This project answers seven practical data analyst questions covering transaction volume, card scheme distribution, bank-level performance, settlement latency, 16-day forecasting, dashboard design, and business recommendations.
 
-## Data Cleaning & Audit Highlights
+## Data Cleaning
 - **Metadata Extraction:** Parsed `TRANS_NO` and `BANK` from the semi-structured `TRANS_NO_INFO` field.
 - **Standardization:** Identified and fixed upstream bank typos—`Bank_green` (220 rows) and `Bank_Yelllow` (26 rows)—to reconcile all records into the 5 expected banks.
 - **Stage Deduplication:** Prevented double-counting across `Authorise`, `Settlement`, and `Refund` rows by deduplicating on `TRANS_NO` (including 23 transactions with duplicate `Settlement + Paid` records).
