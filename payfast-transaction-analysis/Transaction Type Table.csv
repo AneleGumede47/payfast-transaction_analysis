@@ -1,0 +1,10 @@
+TRANSACTION_CODE,TRANSACTION_DESC
+0,None
+1,Authorise
+2,Settlement
+3,Refund
+4,Manual Reversal
+5,Payout
+6,Purchase
+7,Chargeback
+9,System Reversal

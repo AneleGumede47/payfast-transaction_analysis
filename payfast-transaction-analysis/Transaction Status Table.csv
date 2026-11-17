@@ -1,0 +1,11 @@
+TRANSACTION_STATUS,TRANSACTION_DESC
+0,Not Done
+1,Approved
+2,Declined
+3,Paid
+4,Refunded
+5,Received by PayGate
+6,Replied to Client
+7,Stopped by Merchant
+8,Settlement Pending
+9,Reversed
