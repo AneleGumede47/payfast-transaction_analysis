@@ -23,6 +23,7 @@ This project answers seven practical data analyst questions covering transaction
 ## Visual Highlights
 
 ### Card Type Distribution (15 Jun – 15 Jul 2024)
+[payfast-transaction-analysis/images/q1_card_types.png]
 <img width="2371" height="1168" alt="q1_card_types" src="https://github.com/user-attachments/assets/949139f0-0362-482b-8c9f-82c4c2360166" />
 
 
@@ -48,7 +49,7 @@ A **Executive & Operations Dashboard** featuring:
 ## Business Insights & Recommendations (Q7)
 - **Peak Traffic Windows:** Weekday volume (208–251/day) is over 2x weekend volume (94–113/day), peaking on Mondays and between 09:00–12:00, maintenance windows should run between 00:00–05:00.
 - **Card Scheme Conversion:** American Express converts at **98.62%**, whereas MasterCard has the highest decline rate (**14.39%**) and Diners Club has the highest refund rate (**8.74%**).
-- **Data Governance:** Enforce bank-name validation at ingestion and audit the **392** `Not Done` authorisations and **23** duplicate settlement records.
+- Enforce bank-name validation at ingestion and audit the **392** `Not Done` authorisations and **23** duplicate settlement records.
 
 ## Repository Structure
 - `payfast_analysis.ipynb`- Full step-by-step Python & SQLite analysis notebook
