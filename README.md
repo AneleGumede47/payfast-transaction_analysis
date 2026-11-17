@@ -23,7 +23,6 @@ This project answers seven practical data analyst questions covering transaction
 ## Visual Highlights
 
 ### Card Type Distribution (15 Jun – 15 Jul 2024)
-[payfast-transaction-analysis/images/q1_card_types.png]
 <img width="2371" height="1168" alt="q1_card_types" src="https://github.com/user-attachments/assets/949139f0-0362-482b-8c9f-82c4c2360166" />
 
 
